@@ -832,6 +832,27 @@
             }
         }
 
+        .team-logo {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            border: 2px solid var(--usx-blue);
+            background: var(--usx-dark);
+            flex-shrink: 0;
+            object-fit: cover;
+        }
+
+        .team-logo-lg {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            border: 2px solid var(--usx-orange);
+            background: var(--usx-dark);
+            display: block;
+            margin: 0 auto 0.6rem;
+            object-fit: cover;
+        }
+
         .hidden {
             display: none !important;
         }
@@ -1437,7 +1458,7 @@
                     <div style="background: linear-gradient(135deg, rgba(0, 102, 255, 0.05), rgba(26, 26, 26, 0.95)); border: 2px solid var(--usx-light-gray); border-radius: 16px; padding: 2rem;">
                         <div style="display: grid; grid-template-columns: 1fr auto 1fr; gap: 2rem; align-items: center;">
                             <div style="text-align: center;">
-                                <div style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 1.5rem; text-transform: uppercase;">Thunder FC</div>
+                                <div class="fixture-team-name" style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 1.5rem; text-transform: uppercase;">Thunder FC</div>
                             </div>
                             <div style="text-align: center;">
                                 <div style="font-family: 'Oswald', sans-serif; font-size: 2rem; font-weight: 700; color: var(--usx-orange);">VS</div>
@@ -1447,7 +1468,7 @@
                                 </div>
                             </div>
                             <div style="text-align: center;">
-                                <div style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 1.5rem; text-transform: uppercase;">Phoenix FC</div>
+                                <div class="fixture-team-name" style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 1.5rem; text-transform: uppercase;">Phoenix FC</div>
                             </div>
                         </div>
                     </div>
@@ -1455,7 +1476,7 @@
                     <div style="background: linear-gradient(135deg, rgba(0, 102, 255, 0.05), rgba(26, 26, 26, 0.95)); border: 2px solid var(--usx-light-gray); border-radius: 16px; padding: 2rem;">
                         <div style="display: grid; grid-template-columns: 1fr auto 1fr; gap: 2rem; align-items: center;">
                             <div style="text-align: center;">
-                                <div style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 1.5rem; text-transform: uppercase;">Lightning United</div>
+                                <div class="fixture-team-name" style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 1.5rem; text-transform: uppercase;">Lightning United</div>
                             </div>
                             <div style="text-align: center;">
                                 <div style="font-family: 'Oswald', sans-serif; font-size: 2rem; font-weight: 700; color: var(--usx-orange);">VS</div>
@@ -1465,7 +1486,7 @@
                                 </div>
                             </div>
                             <div style="text-align: center;">
-                                <div style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 1.5rem; text-transform: uppercase;">Dynamo FC</div>
+                                <div class="fixture-team-name" style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 1.5rem; text-transform: uppercase;">Dynamo FC</div>
                             </div>
                         </div>
                     </div>
@@ -1473,7 +1494,7 @@
                     <div style="background: linear-gradient(135deg, rgba(0, 102, 255, 0.05), rgba(26, 26, 26, 0.95)); border: 2px solid var(--usx-light-gray); border-radius: 16px; padding: 2rem;">
                         <div style="display: grid; grid-template-columns: 1fr auto 1fr; gap: 2rem; align-items: center;">
                             <div style="text-align: center;">
-                                <div style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 1.5rem; text-transform: uppercase;">Eagles United</div>
+                                <div class="fixture-team-name" style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 1.5rem; text-transform: uppercase;">Eagles United</div>
                             </div>
                             <div style="text-align: center;">
                                 <div style="font-family: 'Oswald', sans-serif; font-size: 2rem; font-weight: 700; color: var(--usx-orange);">VS</div>
@@ -1483,7 +1504,7 @@
                                 </div>
                             </div>
                             <div style="text-align: center;">
-                                <div style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 1.5rem; text-transform: uppercase;">Storm FC</div>
+                                <div class="fixture-team-name" style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 1.5rem; text-transform: uppercase;">Storm FC</div>
                             </div>
                         </div>
                     </div>
@@ -1502,14 +1523,14 @@
                 <div style="display: grid; gap: 1.5rem;">
                     <div style="background: linear-gradient(135deg, rgba(0, 102, 255, 0.05), rgba(26, 26, 26, 0.95)); border: 2px solid var(--usx-light-gray); border-radius: 16px; padding: 2rem; border-left: 4px solid var(--usx-blue);">
                         <div style="display: grid; grid-template-columns: 2fr auto 2fr; gap: 2rem; align-items: center; margin-bottom: 1rem;">
-                            <div style="text-align: right;">
-                                <strong style="font-family: 'Oswald', sans-serif; font-size: 1.5rem; text-transform: uppercase;">Dynamo FC</strong>
+                            <div style="text-align: center;">
+                                <strong class="result-team-name" style="font-family: 'Oswald', sans-serif; font-size: 1.5rem; text-transform: uppercase;">Dynamo FC</strong>
                             </div>
                             <div style="text-align: center;">
                                 <div style="font-family: 'Oswald', sans-serif; font-size: 3rem; font-weight: 800; background: linear-gradient(135deg, var(--usx-blue), var(--usx-orange)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">3 - 2</div>
                             </div>
-                            <div style="text-align: left;">
-                                <strong style="font-family: 'Oswald', sans-serif; font-size: 1.5rem; text-transform: uppercase;">Eagles United</strong>
+                            <div style="text-align: center;">
+                                <strong class="result-team-name" style="font-family: 'Oswald', sans-serif; font-size: 1.5rem; text-transform: uppercase;">Eagles United</strong>
                             </div>
                         </div>
                         <div style="text-align: center; color: var(--usx-gray); border-top: 1px solid var(--usx-light-gray); padding-top: 1rem;">
@@ -1519,14 +1540,14 @@
 
                     <div style="background: linear-gradient(135deg, rgba(0, 102, 255, 0.05), rgba(26, 26, 26, 0.95)); border: 2px solid var(--usx-light-gray); border-radius: 16px; padding: 2rem; border-left: 4px solid var(--usx-orange);">
                         <div style="display: grid; grid-template-columns: 2fr auto 2fr; gap: 2rem; align-items: center; margin-bottom: 1rem;">
-                            <div style="text-align: right;">
-                                <strong style="font-family: 'Oswald', sans-serif; font-size: 1.5rem; text-transform: uppercase;">Thunder FC</strong>
+                            <div style="text-align: center;">
+                                <strong class="result-team-name" style="font-family: 'Oswald', sans-serif; font-size: 1.5rem; text-transform: uppercase;">Thunder FC</strong>
                             </div>
                             <div style="text-align: center;">
                                 <div style="font-family: 'Oswald', sans-serif; font-size: 3rem; font-weight: 800; background: linear-gradient(135deg, var(--usx-blue), var(--usx-orange)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">4 - 1</div>
                             </div>
-                            <div style="text-align: left;">
-                                <strong style="font-family: 'Oswald', sans-serif; font-size: 1.5rem; text-transform: uppercase;">Storm FC</strong>
+                            <div style="text-align: center;">
+                                <strong class="result-team-name" style="font-family: 'Oswald', sans-serif; font-size: 1.5rem; text-transform: uppercase;">Storm FC</strong>
                             </div>
                         </div>
                         <div style="text-align: center; color: var(--usx-gray); border-top: 1px solid var(--usx-light-gray); padding-top: 1rem;">
@@ -1536,14 +1557,14 @@
 
                     <div style="background: linear-gradient(135deg, rgba(0, 102, 255, 0.05), rgba(26, 26, 26, 0.95)); border: 2px solid var(--usx-light-gray); border-radius: 16px; padding: 2rem; border-left: 4px solid var(--success);">
                         <div style="display: grid; grid-template-columns: 2fr auto 2fr; gap: 2rem; align-items: center; margin-bottom: 1rem;">
-                            <div style="text-align: right;">
-                                <strong style="font-family: 'Oswald', sans-serif; font-size: 1.5rem; text-transform: uppercase;">Lightning United</strong>
+                            <div style="text-align: center;">
+                                <strong class="result-team-name" style="font-family: 'Oswald', sans-serif; font-size: 1.5rem; text-transform: uppercase;">Lightning United</strong>
                             </div>
                             <div style="text-align: center;">
                                 <div style="font-family: 'Oswald', sans-serif; font-size: 3rem; font-weight: 800; background: linear-gradient(135deg, var(--usx-blue), var(--usx-orange)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">2 - 2</div>
                             </div>
-                            <div style="text-align: left;">
-                                <strong style="font-family: 'Oswald', sans-serif; font-size: 1.5rem; text-transform: uppercase;">Phoenix FC</strong>
+                            <div style="text-align: center;">
+                                <strong class="result-team-name" style="font-family: 'Oswald', sans-serif; font-size: 1.5rem; text-transform: uppercase;">Phoenix FC</strong>
                             </div>
                         </div>
                         <div style="text-align: center; color: var(--usx-gray); border-top: 1px solid var(--usx-light-gray); padding-top: 1rem;">
@@ -1671,10 +1692,18 @@
                 const nameCell = tableRows[teamIndex].querySelector('.team-name');
                 const pointsCell = tableRows[teamIndex].querySelector('.team-points');
                 
-                if (nameCell) nameCell.textContent = teamName;
+                if (nameCell) {
+                    nameCell.textContent = teamName;
+                    // Refresh logo for updated team name
+                    const logo = nameCell.closest('td')?.querySelector('.team-logo');
+                    if (logo) {
+                        logo.src = getTeamLogo(teamName);
+                        logo.alt = teamName + ' logo';
+                    }
+                }
                 if (pointsCell) pointsCell.textContent = teamPoints;
             }
-            
+
             alert(`✓ ${teamName} updated successfully! Points: ${teamPoints}`);
         }
 
@@ -1771,6 +1800,50 @@
             }
         }
 
+        // Team Logo Generation (DiceBear AI-styled badges)
+        function getTeamLogo(name) {
+            const seed = encodeURIComponent(name.trim());
+            return `https://api.dicebear.com/8.x/shapes/svg?seed=${seed}&backgroundColor=1a1a1a&shapeColor=0066ff,ff8c00,ffd700,00ff88,ffffff`;
+        }
+
+        function injectTeamLogos() {
+            // Standings table logos
+            document.querySelectorAll('#standingsTable .team-name').forEach(el => {
+                const td = el.closest('td');
+                if (td && !td.querySelector('.team-logo')) {
+                    td.style.cssText += ';display:flex;align-items:center;gap:0.7rem;';
+                    const img = document.createElement('img');
+                    img.className = 'team-logo';
+                    img.src = getTeamLogo(el.textContent.trim());
+                    img.alt = el.textContent.trim() + ' logo';
+                    td.insertBefore(img, el);
+                }
+            });
+
+            // Fixture card logos
+            document.querySelectorAll('.fixture-team-name').forEach(el => {
+                if (!el.querySelector('.team-logo-lg')) {
+                    const img = document.createElement('img');
+                    img.className = 'team-logo-lg';
+                    img.src = getTeamLogo(el.textContent.trim());
+                    img.alt = el.textContent.trim() + ' logo';
+                    el.insertBefore(img, el.firstChild);
+                }
+            });
+
+            // Results card logos
+            document.querySelectorAll('.result-team-name').forEach(el => {
+                const parent = el.parentElement;
+                if (!parent.querySelector('.team-logo-lg')) {
+                    const img = document.createElement('img');
+                    img.className = 'team-logo-lg';
+                    img.src = getTeamLogo(el.textContent.trim());
+                    img.alt = el.textContent.trim() + ' logo';
+                    parent.insertBefore(img, el);
+                }
+            });
+        }
+
         // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -1789,6 +1862,7 @@
             if (dateInput) {
                 dateInput.min = today;
             }
+            injectTeamLogos();
         });
     </script>
 </body>
