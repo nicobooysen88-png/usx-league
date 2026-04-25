@@ -837,20 +837,27 @@
             height: 38px;
             border-radius: 50%;
             border: 2px solid var(--usx-blue);
-            background: var(--usx-dark);
+            background: linear-gradient(135deg, rgba(0,102,255,0.2), rgba(26,26,26,0.9));
             flex-shrink: 0;
             object-fit: cover;
+            transition: opacity 0.3s ease;
         }
 
         .team-logo-lg {
-            width: 64px;
-            height: 64px;
+            width: 72px;
+            height: 72px;
             border-radius: 50%;
-            border: 2px solid var(--usx-orange);
-            background: var(--usx-dark);
+            border: 3px solid var(--usx-orange);
+            background: linear-gradient(135deg, rgba(255,140,0,0.2), rgba(26,26,26,0.9));
             display: block;
             margin: 0 auto 0.6rem;
             object-fit: cover;
+            box-shadow: 0 4px 15px rgba(255,140,0,0.3);
+            transition: opacity 0.3s ease;
+        }
+
+        .team-logo[src], .team-logo-lg[src] {
+            opacity: 1;
         }
 
         .hidden {
@@ -1800,10 +1807,19 @@
             }
         }
 
-        // Team Logo Generation (DiceBear AI-styled badges)
+        // Team Logo Generation (Pollinations.ai - free AI image generation)
         function getTeamLogo(name) {
-            const seed = encodeURIComponent(name.trim());
-            return `https://api.dicebear.com/8.x/shapes/svg?seed=${seed}&backgroundColor=1a1a1a&shapeColor=0066ff,ff8c00,ffd700,00ff88,ffffff`;
+            const cleanName = name.trim();
+            // Generate consistent seed from team name
+            let seed = 0;
+            for (let i = 0; i < cleanName.length; i++) {
+                seed = ((seed << 5) - seed) + cleanName.charCodeAt(i);
+                seed |= 0;
+            }
+            const prompt = encodeURIComponent(
+                `professional football club badge crest for ${cleanName}, circular emblem, heraldic shield design, gold blue orange metallic colors, dark background, ultra detailed, sports logo`
+            );
+            return `https://image.pollinations.ai/prompt/${prompt}?width=256&height=256&nologo=true&seed=${Math.abs(seed)}`;
         }
 
         function injectTeamLogos() {
